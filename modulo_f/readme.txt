@@ -1,0 +1,1 @@
+O site deve ser corrigido no monitor padrão do notebook dell g15

@@ -1,0 +1,4 @@
+Segue um relatório como as imagens foram armazenadas e listadas
+
+Todas as imagens estão sendo recebedidas em um texto convertido em base 64
+A imagem é então armazenada no banco de dados como um texto em base 64 e deve ser convertido para imagem no lado do usuário

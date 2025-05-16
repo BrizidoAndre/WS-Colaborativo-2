@@ -1,0 +1,122 @@
+@import "bootstrap.min.css";
+
+:root {
+    --white: #f9f9f9;
+    --dark-blue: #132a3d;
+    --blue: #205376;
+    --orange: #ed6c1a;
+    --black: #0d0d0d;
+    --light-gray: #e9e9e9;
+    --light-light-gray: #efefef;
+    --margin: min(5rem, 8%);
+}
+
+.home {
+    background: var(--white);
+    color: var(--dark);
+    min-height: 100vh;
+}
+
+.dark {
+    --white: #0d0d0d;
+    --dark: #f9f9f9;
+}
+
+html {
+    background: var(--white);
+    color: var(--dark-blue);
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+.lato-regular {
+    font-family: Lato, sans-serif;
+}
+
+.lato-bold {
+    font-family: LatoBold, sans-serif;
+}
+
+.roboto {
+    font-family: Roboto, sans-serif;
+}
+
+.btn-full {
+    color: var(--white);
+    background: var(--orange);
+}
+
+.btn-empty {
+    color: var(--orange);
+    background: var(--white);
+    border: 1px solid var(--orange) !important;
+}
+
+.btn-full.disabled {
+    background: var(--light-light-gray) !important;
+}
+
+.btn-empty.disabled {
+    border-color: var(--light-gray) !important;
+    color: var(--light-light-gray) !important;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--black);
+    padding: .5rem .5rem .5rem 1rem;
+}
+
+input:focus {
+    border-color: var(--orange);
+}
+
+img {
+    width: 200px;
+}
+
+a {
+    color: var(--black) !important;
+    border-color: transparent !important;
+}
+
+.link-header {
+    color: var(--black) !important;
+    border-color: transparent !important;
+}
+
+.modal-outline {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, .4);
+}
+
+.modal-container {
+    background: var(--white);
+}
+
+.cur {
+    cursor: pointer;
+}

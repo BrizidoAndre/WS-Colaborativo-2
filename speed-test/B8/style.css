@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Saira Extra Condensed';
+    src: url("./font.ttf");
+}
+
+body, html {
+
+}
+
+body {
+    background: #12171b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+* {
+    position: relative;
+}
+
+.spacer {
+    height: 60vh;
+}
+
+h1 {
+
+}
+
+.rotatingHeader {
+    width: fit-content;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.rotatingHeader h1 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #444;
+    font-size: clamp(40px, 10vw, 200px);
+    margin: 0;
+    padding: 0;
+    line-height: 0.5;
+
+    perspective: 600px;
+}
+
+.rotatingHeader h1:nth-child(2) {
+    color: #efefef;
+}
+
+/**
+  YOUR CODE GOES HERE
+ */
+
+.rotatingHeader h1:nth-child(1) {
+}
+
+.rotatingHeader{
+    transform: rotateX(40deg);
+}

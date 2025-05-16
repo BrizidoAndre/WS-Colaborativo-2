@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    perspective: 500px;
+}
+
+.cube-container {
+    transform-style: preserve-3d;
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    transform-origin: 50% 50%;
+
+    .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 8rem;
+    }
+}
+
+.face-front {
+    background: #173f5f;
+    color: white;
+    transform: translateZ(150px);
+}
+
+.face-right {
+    background: #57209b;
+    color: white;
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.face-back {
+    background: #3ca3a3;
+    color: black;
+    transform: translateZ(-150px) rotateY(180deg);
+}
+
+.face-left {
+    background: #f6d55c;
+    color: black;
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.face-top {
+    background: #ed553b;
+    color: black;
+    transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+}
+
+.face-bottom {
+    background: #ed3bde;
+    color: black;
+    transform: rotateY(-90deg) rotateX(-90deg) translateZ(150px);
+}
+
+.cube-container {
+    transition: .4s;
+}
+#radio-1:checked ~ .scroll-container .cube-container {
+    transform: rotateY(0deg);
+}
+#radio-2:checked ~ .scroll-container .cube-container {
+    transform: rotateY(-90deg);
+}
+#radio-3:checked ~ .scroll-container .cube-container {
+    transform: rotateY(-180deg);
+}
+#radio-4:checked ~ .scroll-container .cube-container {
+    transform: rotateY(-270deg);
+}
+
+.controls {
+    position: fixed;
+    justify-content: space-between;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+.input-container{
+    position: absolute;
+    top: 0;
+}
+
+#radio-1:checked ~ #controls-1 {
+    display: flex;
+}
+#radio-2:checked ~ #controls-2 {
+    display: flex;
+}
+#radio-3:checked ~ #controls-3 {
+    display: flex;
+}
+#radio-4:checked ~ #controls-4 {
+    display: flex;
+}

@@ -1,0 +1,146 @@
+:root {
+    --purple: #6a196a;
+    --dark-purple: #390239;
+    --light-purple: #bd2fbd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.purple {
+    background: var(--purple);
+}
+
+.dark-purple {
+    background: var(--dark-purple);
+}
+
+.light-purple {
+    background: var(--light-purple);
+}
+
+.container-grid {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(7, 100px);
+    grid-template-areas:
+    "a a a a a a"
+    "a a a a a a"
+    "b b c c d d"
+    "e e e f f f"
+    "g h h h h i"
+    "j k l l l l"
+    "m m m m n o";
+    gap: 20px;
+    padding: 5rem 0 ;
+}
+
+.grid-a {
+    grid-area: a;
+}
+
+.grid-b {
+    grid-area: b;
+}
+
+.grid-c {
+    grid-area: c;
+}
+
+.grid-d {
+    grid-area: d;
+}
+
+.grid-e {
+    grid-area: e;
+}
+
+.grid-f {
+    grid-area: f;
+}
+
+.grid-g {
+    grid-area: g;
+}
+
+.grid-h {
+    grid-area: h;
+}
+
+.grid-i {
+    grid-area: i;
+}
+
+.grid-j {
+    grid-area: j;
+}
+
+.grid-k {
+    grid-area: k;
+}
+
+.grid-l {
+    grid-area: l;
+}
+
+.grid-m {
+    grid-area: m;
+}
+
+.grid-n {
+    grid-area: n;
+}
+
+.grid-o {
+    grid-area: o;
+}
+
+.container-grid > div {
+    min-height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-grid {
+        grid-template-areas:
+        "a a"
+        "a a"
+        "b c"
+        "d d"
+        "e e"
+        "f f"
+        "g i"
+        "h h"
+        "j k"
+        "l l"
+        "n o"
+        "m m";
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-grid {
+        grid-template-areas:
+        "a"
+        "a"
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "i"
+        "h"
+        "j"
+        "k"
+        "l"
+        "n"
+        "o"
+        "m"
+    ;
+    }
+}

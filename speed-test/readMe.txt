@@ -1,0 +1,2 @@
+Conforme combinado com os avaliadores, o programa de testes não está sendo usado como referência para a garantia da validação das funções
+Em vez disso, deve-se pegar os testes manualmente dentro da classe de Testes e implementá-los nas suas respectivas funções de teste.
